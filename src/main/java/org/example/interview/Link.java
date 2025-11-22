@@ -33,17 +33,19 @@ public class Link {
         forth.setNext(sec);
         System.out.println(haveCicle(head));
     }
+
+    static class Node {
+        int data;
+        Node next;
+
+        public Node(int data){
+            this.data = data;
+        }
+
+        void setNext(Node node){
+            this.next = node;
+        }
+    }
 }
 
-class Node {
-    int data;
-    Node next;
 
-    public Node(int data){
-        this.data = data;
-    }
-
-    void setNext(Node node){
-        this.next = node;
-    }
-}
